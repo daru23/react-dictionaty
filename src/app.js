@@ -1,8 +1,13 @@
 /**
  * Created by daru on 18/10/2017.
  */
-import FlashMessage from "./flash-message";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-let flash = new FlashMessage("Gulp, Babel and Browserify Skeleton");
 
-flash.display();
+// Render when document is ready
+document.addEventListener('DOMContentLoaded', function() {
+    ReactDOM.render(
+
+    );
+});
