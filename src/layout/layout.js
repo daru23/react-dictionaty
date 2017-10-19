@@ -1,14 +1,14 @@
 /**
  * Created by daru on 19/10/2017.
  */
-import React from 'react';
-import { Link } from 'react-router';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Layout extends React.Component {
     render() {
         return (
             <div>
-                <div className="top-menu">
+                <div >
                     <ul>
                         <li>
                             <Link to="/home">Home</Link>
