@@ -34391,7 +34391,7 @@ var app = _react2.default.createElement(
 });
 
 },{"./layout/layout":226,"./pages/home":227,"./pages/labels":228,"./pages/words":229,"jquery":35,"react":221,"react-dom":46,"react-router-dom":184}],226:[function(require,module,exports){
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -34399,11 +34399,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = require('react-router-dom');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34426,43 +34424,49 @@ var Layout = function (_React$Component) {
     }
 
     _createClass(Layout, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                null,
+                "nav",
+                { className: "navbar navbar-expand-lg navbar-light bg-light" },
                 _react2.default.createElement(
-                    'div',
-                    null,
+                    "a",
+                    { className: "navbar-brand", href: "/home" },
+                    "Home"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "collapse navbar-collapse" },
                     _react2.default.createElement(
-                        'ul',
-                        null,
+                        "ul",
+                        { className: "navbar-nav mr-auto mt-2 mt-lg-0" },
                         _react2.default.createElement(
-                            'li',
-                            null,
+                            "li",
+                            { className: "nav-item" },
                             _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { to: '/home' },
-                                'Home'
+                                "a",
+                                { className: "nav-link", href: "/words" },
+                                "Words"
                             )
                         ),
                         _react2.default.createElement(
-                            'li',
-                            null,
+                            "li",
+                            { className: "nav-item" },
                             _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { to: '/words' },
-                                'Words'
+                                "a",
+                                { className: "nav-link disabled", href: "/labels" },
+                                "Labels"
                             )
-                        ),
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "form",
+                        { className: "form-inline my-2 my-lg-0" },
+                        _react2.default.createElement("input", { className: "form-control mr-sm-2", type: "text", placeholder: "Search", "aria-label": "Search" }),
                         _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { to: '/labels' },
-                                'Labels'
-                            )
+                            "button",
+                            { className: "btn btn-outline-success my-2 my-sm-0", type: "submit" },
+                            "Search"
                         )
                     )
                 ),
@@ -34476,7 +34480,7 @@ var Layout = function (_React$Component) {
 
 exports.default = Layout;
 
-},{"react":221,"react-router-dom":184}],227:[function(require,module,exports){
+},{"react":221}],227:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
