@@ -34468,7 +34468,7 @@ var Layout = function (_React$Component) {
                         _react2.default.createElement('input', { className: 'form-control mr-sm-2', type: 'text', placeholder: 'Search', 'aria-label': 'Search' }),
                         _react2.default.createElement(
                             'button',
-                            { className: 'btn btn-outline-success my-2 my-sm-0', type: 'submit' },
+                            { className: 'btn btn-outline-info my-2 my-sm-0', type: 'submit' },
                             'Search'
                         )
                     )
