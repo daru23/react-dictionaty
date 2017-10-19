@@ -34372,8 +34372,9 @@ var app = _react2.default.createElement(
     _reactRouterDom.HashRouter,
     { history: _reactRouterDom.hashHistory },
     _react2.default.createElement(
-        _layout2.default,
+        'div',
         null,
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _layout2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _home2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/words', component: _words2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/labels', component: _labels2.default })
@@ -34385,13 +34386,13 @@ var app = _react2.default.createElement(
 
 // using ES6 modules
 (0, _jquery2.default)(function () {
-    _reactDom2.default.render(app, document.getElementById('word-box'), function () {
+    _reactDom2.default.render(app, document.getElementById('body'), function () {
         console.log('hola coca cola');
     });
 });
 
 },{"./layout/layout":226,"./pages/home":227,"./pages/labels":228,"./pages/words":229,"jquery":35,"react":221,"react-dom":46,"react-router-dom":184}],226:[function(require,module,exports){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -34399,9 +34400,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34424,49 +34427,49 @@ var Layout = function (_React$Component) {
     }
 
     _createClass(Layout, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                "nav",
-                { className: "navbar navbar-expand-lg navbar-light bg-light" },
+                'nav',
+                { className: 'navbar navbar-expand-lg navbar-light bg-light' },
                 _react2.default.createElement(
-                    "a",
-                    { className: "navbar-brand", href: "/home" },
-                    "Home"
+                    _reactRouterDom.Link,
+                    { className: 'navbar-brand', to: '/home' },
+                    'Home'
                 ),
                 _react2.default.createElement(
-                    "div",
-                    { className: "collapse navbar-collapse" },
+                    'div',
+                    { className: 'collapse navbar-collapse' },
                     _react2.default.createElement(
-                        "ul",
-                        { className: "navbar-nav mr-auto mt-2 mt-lg-0" },
+                        'ul',
+                        { className: 'navbar-nav mr-auto mt-2 mt-lg-0' },
                         _react2.default.createElement(
-                            "li",
-                            { className: "nav-item" },
+                            'li',
+                            { className: 'nav-item' },
                             _react2.default.createElement(
-                                "a",
-                                { className: "nav-link", href: "/words" },
-                                "Words"
+                                _reactRouterDom.Link,
+                                { className: 'nav-link', to: '/words' },
+                                'Words'
                             )
                         ),
                         _react2.default.createElement(
-                            "li",
-                            { className: "nav-item" },
+                            'li',
+                            { className: 'nav-item' },
                             _react2.default.createElement(
-                                "a",
-                                { className: "nav-link disabled", href: "/labels" },
-                                "Labels"
+                                _reactRouterDom.Link,
+                                { className: 'nav-link', to: '/labels' },
+                                'Labels'
                             )
                         )
                     ),
                     _react2.default.createElement(
-                        "form",
-                        { className: "form-inline my-2 my-lg-0" },
-                        _react2.default.createElement("input", { className: "form-control mr-sm-2", type: "text", placeholder: "Search", "aria-label": "Search" }),
+                        'form',
+                        { className: 'form-inline my-2 my-lg-0' },
+                        _react2.default.createElement('input', { className: 'form-control mr-sm-2', type: 'text', placeholder: 'Search', 'aria-label': 'Search' }),
                         _react2.default.createElement(
-                            "button",
-                            { className: "btn btn-outline-success my-2 my-sm-0", type: "submit" },
-                            "Search"
+                            'button',
+                            { className: 'btn btn-outline-success my-2 my-sm-0', type: 'submit' },
+                            'Search'
                         )
                     )
                 ),
@@ -34480,7 +34483,7 @@ var Layout = function (_React$Component) {
 
 exports.default = Layout;
 
-},{"react":221}],227:[function(require,module,exports){
+},{"react":221,"react-router-dom":184}],227:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -34602,16 +34605,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
 
-var WordsPage = function (_React$Component) {
-    _inherits(WordsPage, _React$Component);
+var WPage = function (_React$Component) {
+    _inherits(WPage, _React$Component);
 
-    function WordsPage() {
-        _classCallCheck(this, WordsPage);
+    function WPage() {
+        _classCallCheck(this, WPage);
 
-        return _possibleConstructorReturn(this, (WordsPage.__proto__ || Object.getPrototypeOf(WordsPage)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (WPage.__proto__ || Object.getPrototypeOf(WPage)).apply(this, arguments));
     }
 
-    _createClass(WordsPage, [{
+    _createClass(WPage, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -34622,10 +34625,10 @@ var WordsPage = function (_React$Component) {
         }
     }]);
 
-    return WordsPage;
+    return WPage;
 }(_react2.default.Component);
 
-exports.default = WordsPage;
+exports.default = WPage;
 
 },{"react":221}]},{},[225])
 //# sourceMappingURL=bundle.js.map

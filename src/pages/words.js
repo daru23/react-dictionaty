@@ -3,7 +3,7 @@
  */
 import React from 'react';
 
-export default class WordsPage extends React.Component {
+export default class WPage extends React.Component {
     render() {
         return (
             <div>

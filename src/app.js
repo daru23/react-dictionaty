@@ -16,11 +16,12 @@ import LabelsPage from './pages/labels'
 
 const app = (
     <Router history={hashHistory} >
-        <Layout>
+        <div>
+            <Route path="/" component={Layout} />
             <Route path="/home" component={HomePage} />
             <Route path="/words" component={WordsPage} />
             <Route path="/labels" component={LabelsPage} />
-        </Layout>
+        </div>
     </Router>
 );
 
@@ -29,7 +30,7 @@ const app = (
 jQuery(function() {
     ReactDOM.render(
         app,
-        document.getElementById('word-box'),
+        document.getElementById('body'),
         function() {
             console.log('hola coca cola')
         }

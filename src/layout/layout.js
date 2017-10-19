@@ -2,19 +2,20 @@
  * Created by daru on 19/10/2017.
  */
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Layout extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="/home">Home</a>
+                <Link className="navbar-brand" to="/home">Home</Link>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="/words">Words</a>
+                            <Link className="nav-link" to="/words">Words</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled" href="/labels">Labels</a>
+                            <Link className="nav-link" to="/labels">Labels</Link>
                         </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
