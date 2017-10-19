@@ -34385,9 +34385,7 @@ var app = _react2.default.createElement(
 
 // using ES6 modules
 (0, _jquery2.default)(function () {
-    _reactDom2.default.render(
-    //<h3>Hola Mundo</h3>,
-    app, document.getElementById('word-box'), function () {
+    _reactDom2.default.render(app, document.getElementById('word-box'), function () {
         console.log('hola coca cola');
     });
 });

@@ -28,7 +28,6 @@ const app = (
 // Render when document is ready
 jQuery(function() {
     ReactDOM.render(
-        //<h3>Hola Mundo</h3>,
         app,
         document.getElementById('word-box'),
         function() {
