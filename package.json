@@ -46,6 +46,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "babel-core": "^6.1.21"
+    "babel-core": "^6.1.21",
+    "react-router-dom": "^4.2.2"
   }
 }

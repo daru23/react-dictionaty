@@ -34582,7 +34582,7 @@ var LabelsPage = function (_React$Component) {
 exports.default = LabelsPage;
 
 },{"react":221}],229:[function(require,module,exports){
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -34590,7 +34590,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -34605,6 +34605,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
 
+// import WordBox from '../components/word-box';
+
 var WPage = function (_React$Component) {
     _inherits(WPage, _React$Component);
 
@@ -34615,13 +34617,81 @@ var WPage = function (_React$Component) {
     }
 
     _createClass(WPage, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                "div",
                 null,
-                'Welcome to Words'
-            );
+                _react2.default.createElement(
+                    "table",
+                    { className: "table table-striped table-hover" },
+                    _react2.default.createElement(
+                        "tbody",
+                        null,
+                        _react2.default.createElement(
+                            "tr",
+                            { "class": "info" },
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                "Word"
+                            ),
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                "Translation"
+                            ),
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                "Is label?"
+                            ),
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                "Options"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "tr",
+                            null,
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                "mooi"
+                            ),
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                "beautiful"
+                            ),
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                " "
+                            ),
+                            _react2.default.createElement(
+                                "td",
+                                null,
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "/words/edit/1" },
+                                    _react2.default.createElement("span", { "class": "options glyphicon glyphicon-pencil" })
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "/words/delete" },
+                                    _react2.default.createElement("span", { "class": "options glyphicon glyphicon-trash" })
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+
+            // <WordBox apiUrl="localhost:8000" />
+
+            ;
         }
     }]);
 
