@@ -2,6 +2,14 @@ import React from 'react';
 
 export default class Word extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            edit : false,
+            deleted : false
+        };
+    }
+
     render() {
         return (
             <tr>

@@ -5,6 +5,7 @@ import React from 'react';
 // import WordBox from '../components/word-box';
 
 export default class WPage extends React.Component {
+
     render() {
         return (
             <div>
