@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom'
 import jQuery from 'jquery';
 
 // using ES6 modules
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Layout from './layout/layout';
 
@@ -32,7 +32,7 @@ jQuery(function() {
         app,
         document.getElementById('body'),
         function() {
-            console.log('hola coca cola')
+            console.log('')
         }
     );
 });
