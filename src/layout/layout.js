@@ -8,7 +8,7 @@ export default class Layout extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <Link className="navbar-brand" to="/home">Home</Link>
+                <Link className="navbar-brand" to='/home'>Home</Link>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
