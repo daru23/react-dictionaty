@@ -8,14 +8,14 @@ export default class Layout extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <Link className="navbar-brand" to='/home'>Home</Link>
+                <Link className="navbar-brand" to={"/home"}>Home</Link>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/words">Words</Link>
+                            <Link to={"/words"}>Words</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/labels">Labels</Link>
+                            <Link to={"/labels"}>Labels</Link>
                         </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">

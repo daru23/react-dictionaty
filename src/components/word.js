@@ -16,7 +16,9 @@ export default class Word extends React.Component {
                 <td>mooi</td>
                 <td>beautiful</td>
                 <td> </td>
-                <td><a href="/words/edit/1"><span class="options glyphicon glyphicon-pencil"></span></a><a href="/words/delete"><span class="options glyphicon glyphicon-trash"></span></a>
+                <td>
+                    <a href="/words/edit/1"><span className="options glyphicon glyphicon-pencil"></span></a>
+                    <a href="/words/delete"><span className="options glyphicon glyphicon-trash"></span></a>
                 </td>
             </tr>
         );
