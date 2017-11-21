@@ -8,20 +8,12 @@ import jQuery from 'jquery';
 // using ES6 modules
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Layout from './layout/layout';
-
-import HomePage from './pages/home'
-import WordsPage from './pages/words'
-import LabelsPage from './pages/labels'
+// import Components
+import Home from './components/Home';
 
 const app = (
     <Router >
-        <div>
-            <Route path="/" component={Layout} />
-            <Route path="/home" component={HomePage} />
-            <Route path="/words" component={WordsPage} />
-            <Route path="/labels" component={LabelsPage} />
-        </div>
+            <Route path="/home" component={Home} />
     </Router>
 );
 
@@ -32,7 +24,7 @@ jQuery(function() {
         app,
         document.getElementById('body'),
         function() {
-            console.log('')
+            //console.log('')
         }
     );
 });
