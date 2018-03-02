@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@material/tabs": "^0.29.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.2.1",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "reactstrap": "^5.0.0-beta",
+    "redux": "^3.7.2",
+    "webpack": "^3.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,6 +28,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "jest": "^21.2.1",
-    "react-test-renderer": "^16.0.0"
+    "react-test-renderer": "^16.0.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
