@@ -1,0 +1,20 @@
+.flip-card {
+    background-color: #cef;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.flip-card-back {
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+}
