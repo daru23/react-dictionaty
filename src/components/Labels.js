@@ -3,10 +3,10 @@
  */
 import React from 'react'
 
-export default class Words extends React.Component {
+export default class Labels extends React.Component {
     render() {
         return (
-            <div>Words</div>
+            <div>Labels</div>
         )
     }
 }

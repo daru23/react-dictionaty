@@ -3,18 +3,11 @@
  */
 import React  from 'react'
 import ReactDOM from 'react-dom'
-import 'bootstrap/dist/css/bootstrap.css';
+import { BrowserRouter } from 'react-router-dom'
 import './style/style.css';
-
-import Layout from './layout/layout'
-import Dashboard from './components/dashboard'
-
-
+import DictionaryRouter from './routes/index'
 
 ReactDOM.render(
-    <div>
-        <Layout />
-        <Dashboard />
-    </div>,
+    <DictionaryRouter/>,
     document.getElementById('root')
 );
