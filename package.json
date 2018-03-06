@@ -11,6 +11,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.0.0",
     "react-bootstrap": "^0.32.1",
+    "react-bootstrap-table-next": "^0.1.4",
+    "react-bootstrap-table2-editor": "^0.1.2",
     "react-dom": "^16.2.0",
     "react-flipcard-2": "^0.3.2",
     "react-router": "^4.2.0",
